@@ -1,0 +1,91 @@
+Melbourne Property Group – Designer-Friendly Website Draft &amp; Page Flow
+
+1. Home (Homepage Hero)
+ Background Image: property_frame_familyhome.jpg
+ Headline: Connecting Buyers, Investors, Professionals &amp; Developers Nationwide
+ Subheadline: We make property connections simple, transparent, and trusted.
+ CTA Buttons (top of page):
+o Home Buyers → links to Home Buyers section
+o Investors → links to Investors section
+o Partners → links to Partners page
+o Developers → links to Developers page
+
+2. Our Services (4 CTA Sections)
+Headline: Explore Our Services
+Subheadline: Click below to find the property service that suits you best.
+2a. Home Buyers
+ Description: Find verified properties for your dream home safely and easily.
+ Benefits:
+o Verified developers for peace of mind
+o Transparent, risk-free process
+o Support from licensed professionals
+o Nationwide property options
+ CTA Button: [Find My Home] → links to Home Buyers section
+2b. Investors
+ Description: Access pre-qualified investment opportunities nationwide.
+ Benefits:
+o Pre-vetted developers for safe investments
+o Transparent referral process and reporting
+o Access to Australia-wide investment properties
+o Expert guidance from accountants and brokers
+ CTA Button: [Explore Investments] → links to Investors section
+
+2c. Partners
+ Description: Grow your business through transparent property referrals.
+ Benefits:
+o Strengthen client relationships
+o Access verified developers and nationwide projects
+o Earn referral rewards transparently
+o Simple onboarding; low barrier to entry
+ CTA Button: [Join as a Partner] → links to Partners page
+2d. Developers
+ Description: Receive qualified client leads from both buyers and professional partners.
+ Benefits:
+o Pre-qualified, verified client leads
+o Access to nationwide partner network
+o Transparent, compliant introductions
+o Enhanced project visibility
+ CTA Button: [Apply to Partner as a Developer] → links to Developers page
+
+3. About Us
+ Background Image: property_frame_aboutus.jpg
+ Headline: Connecting People, Property &amp; Professionals Nationwide
+ Subheadline: We make property connections simple, transparent, and trusted.
+Content Sections:
+ Mission: Safe, transparent referral network
+ Vision: Most trusted national property network
+ Values: Trust, Transparency, Compliance, Collaboration
+ How We Work: Process overview with icons
+Investor-Specific CTA:
+ Headline: I&#39;m an Investor
+ Text: Get access to pre-qualified investment opportunities nationwide.
+ CTA Button: [Explore Investments] → links to Investors section
+Other CTA Buttons:
+
+ [I’m a Buyer] → links to Home Buyers section
+ [Join as a Partner] → links to Partners page
+ [Developer Sign-Up] → links to Developers page
+
+4. Contact Us
+ Background Image: property_frame_contact.jpg
+ Headline: Ready to Connect? Let’s Build Together.
+Form Fields:
+ Name
+ Email
+ Phone
+ I am a [Buyer / Investor / Partner / Developer]
+ Message
+CTA Buttons (under form):
+ [Send Enquiry] → submits form
+ [Join Network] → optional link to join form
+ [Developer Sign-Up] → links to Developers page
+Contact Info:
+ Email: {}
+ Phone: {}
+
+5. Footer
+ Menu: Home | Our Services | About Us | Home Buyers | Investors | Partners | Developers |
+Contact | Privacy Policy | Referral Disclosure
+ Disclaimer: Melbourne Property Group is an independent property referral network. We are
+not a licensed real estate agency or financial advisor. Introductions are made only to verified
+developers and licensed professionals. Referral rewards are transparent and disclosed.
