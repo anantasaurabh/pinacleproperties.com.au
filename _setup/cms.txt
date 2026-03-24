@@ -1,0 +1,75 @@
+CMS Requirements
+1. Pages
+    1.1 User can Add/Edit/Delete pages
+    1.2 Page have title, slug, content, meta title, meta description, meta keywords, status (active/inactive)
+    1.3 Each Page have configurable hero section
+        1.3.1 Hero section have title, subtitle, button(s) (button text, button link), image(s) or video, status (active/inactive)
+    1.4 Each page has sections. User can add/edit/delete sections
+        1.4.1  Section have kicker text, title, lead text, content text (wysiwyg), link(s) (button text, button link), block-layout (small-image/large-image/list/list-numbered/grid/grid-numbered/slider/tabs/faq/) status (active/inactive)
+        1.4.2  Section can have multiple blocks. User can add/edit/delete blocks
+                1.4.2.1  Block can have title, content, image, icon, button text, button link, columns per row (2,3,4,6) status (active/inactive)
+    1.5 Each Page have configurable CTA section
+        1.5.1 CTA section have title, subtitle, button(s) (button text, button link), image, status (active/inactive)
+2. Navigation
+    2.1 User can add/edit/delete navigation links (separate for header, footer (Quick Links), footer (Company))
+3. Contacts 
+    3.1 The submitted contacts can be viewed in the admin panel
+    3.2 User can add/edit/delete contacts
+    3.3 User can export contacts
+4. Newsletter
+    4.1 The submitted newsletter subscriptions can be viewed in the admin panel
+    4.2 User can add/edit/delete contacts
+    4.3 User can export contacts 
+5. Settings
+    5.1 Logo
+        5.1.1 User can upload logo
+    5.2 Header-Action
+        icon, text, link, status (active/inactive)
+    5.3 Contact Form Handling
+        5.1.1 User can add/edit/delete contact form fields
+    5.4 Social Media
+        5.2.1 User can add/edit/delete social media links
+        5.2.2 Social media links can be added in the header and footer
+    5.3 Footer Text
+        5.3.1 Configurable footer text after logo
+        5.3.2 Configurable copyright text
+
+6. Property Lisitngs
+    All Details for property listings, designed for proper search and filtering
+    6.1 User can Add/Edit/Delete listings
+    6.2 Listing have title, slug, content, meta title, meta description, meta keywords, status (active/inactive)
+    6.3 Listings will have image(s), Floorplan, Content (wysiwyg)
+    6.3 Searchable Fields Like 
+        Price
+        Bedrooms
+        Bathrooms
+        Car spaces
+        Land size
+        Storey
+        Buy/Rent
+        Property type
+            House
+            Land
+            Townhouse
+            Acreage
+            Apartment & Unit
+            Rural
+            Villa
+            Block Of Units
+            Retirement Living
+        New or established property
+        Outdoor features
+            Swimming pool
+            Garage
+            Balcony
+            Outdoor area
+        VIC or QLD
+    6.4 Detail page will have enquiry form, Saved Separately as proerty enquiries
+        6.4.1 first name, family name, email address including estate, Which city are you looking to buy in: VIC or QLD, do you have finance ready? or need help? How did you hear about us? when are you planning to move in? 6 months? 9 months? 12 months? or 18 months?
+        6.4.2 we can secure the package by making a 5% deposit now before the price increases. We have top level of experience builders who can build a dream house. Standard? to build or Customize?
+        6.4.3 we make a become referral partner? please contact us
+7. Property Enquiries
+    7.1 The submitted enquiries can be viewed in the admin panel
+    7.2 User can add/edit/delete enquiries
+    7.3 User can export enquiries 
+        
