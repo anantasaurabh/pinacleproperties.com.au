@@ -13,19 +13,28 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">About MPG</a></li>
-                        <li><a href="#">Join our Network</a></li>
-                        <li><a href="#">Interstate Partners</a></li>
-                        <li><a href="#">Real Estate Network</a></li>
+                        @isset($footerQuick)
+                            @foreach($footerQuick as $nav)
+                                <li><a href="{{ $nav->link }}" target="{{ $nav->target }}">{{ $nav->label }}</a></li>
+                            @endforeach
+                        @else
+                            <li><a href="/about">About MPG</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        @endisset
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        @isset($footerCompany)
+                            @foreach($footerCompany as $nav)
+                                <li><a href="{{ $nav->link }}" target="{{ $nav->target }}">{{ $nav->label }}</a></li>
+                            @endforeach
+                        @else
+                            <li><a href="/about">Our Story</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        @endisset
                     </ul>
                 </div>
                 <div class="newsletter">
