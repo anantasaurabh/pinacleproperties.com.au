@@ -1244,6 +1244,22 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .logo img {
+        height: 55px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .btn-call {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .btn-call strong {
+        display: none;
+    }
 
     .cards-grid,
     .blog-grid,
@@ -1256,8 +1272,32 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .hero {
+        height: auto;
+        min-height: 600px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .hero-content-main {
+        margin: 15px;
+        padding: 20px;
+    }
+
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .btn-hero {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
     }
 
     .footer-grid {
