@@ -2,8 +2,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="{{ asset('assets/images/mpg-logo-invereted.png') }}" alt="Logo" style="max-height:100px">
-                    <p>Melbourne Property Group is a premium real estate platform, providing our partners with the best in property services and development solutions.</p>
+                    <img src="{{ asset('assets/images/pinnacle-logo.png') }}" alt="Logo" style="max-height:100px">
+                    <p>Pinnacle Home & Investment is a premium real estate platform, providing our partners with the best in property services and development solutions.</p>
                     <div class="footer-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -18,7 +18,7 @@
                                 <li><a href="{{ $nav->link }}" target="{{ $nav->target }}">{{ $nav->label }}</a></li>
                             @endforeach
                         @else
-                            <li><a href="/about">About MPG</a></li>
+                            <li><a href="/about">About Pinnacle Home & Investment</a></li>
                             <li><a href="/services">Services</a></li>
                             <li><a href="/contact">Contact</a></li>
                         @endisset
@@ -48,8 +48,8 @@
             </div>
             
             <div class="copyright">
-                <p>© Melbourne Property Group All Rights Reserved.</p>
-                <p style="font-size: 12px; color: #666; margin-top: 10px; text-align: left;">Disclaimer: Melbourne Property Group is an independent property referral network. We are
+                <p>© Pinnacle Home & Investment All Rights Reserved.</p>
+                <p style="font-size: 12px; color: #666; margin-top: 10px; text-align: left;">Disclaimer: Pinnacle Home & Investment is an independent property referral network. We are
 not a licensed real estate agency or financial advisor. Introductions are made only to verified
 developers and licensed professionals. Referral rewards are transparent and disclosed.</p>
             </div>

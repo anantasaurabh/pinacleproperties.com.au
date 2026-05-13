@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @isset($page)
-        <title>{{ $page->meta_title ?? $page->title }} - Melbourne Property Group</title>
+        <title>{{ $page->meta_title ?? $page->title }} - Pinnacle Home & Investment</title>
         <meta name="description" content="{{ $page->meta_description ?? '' }}">
         <meta name="keywords" content="{{ $page->meta_keywords ?? '' }}">
     @else
-        <title>Melbourne Property Group</title>
+        <title>Pinnacle Home & Investment</title>
     @endisset
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
@@ -22,7 +23,7 @@
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ asset('assets/images/melbourne-property-group-logo.png') }}?v=1" alt="Logo">
+                    <img src="{{ asset('assets/images/pinnacle-logo.png') }}?v=1" alt="Logo">
                 </a>
             </div>
             <nav>

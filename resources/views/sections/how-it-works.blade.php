@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="how-it-works-btn" style="text-align: center; margin-top: 50px;">
-            <a href="#" class="btn-hero active">Start Your Referral</a>
+            <div><a href="#" class="btn-primary">Start Your Referral</a></div>
         </div>
     </div>
 </section>
