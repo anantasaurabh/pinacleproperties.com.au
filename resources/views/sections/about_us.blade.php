@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="About Melbourne Property Group">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="About Pinnacle Home and Investment">
                 <div class="about-stats">
                     <div class="stat-item">
                         <strong>100%</strong>

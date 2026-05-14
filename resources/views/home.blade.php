@@ -6,6 +6,9 @@
 {{-- @include('sections.about_us') --}}
 @include('sections.solutions')
 @include('sections.how-it-works')
+
+@include('sections.inquiry-form')
+@include('sections.refer-a-friend')
 @include('sections.blog')
 @include('sections.cta')
 @include('includes.footer')

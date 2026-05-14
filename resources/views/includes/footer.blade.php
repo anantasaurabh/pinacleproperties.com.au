@@ -3,7 +3,9 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <img src="{{ asset('assets/images/pinnacle-logo.png') }}" alt="Logo" style="max-height:100px">
-                    <p>Pinnacle Home & Investment is a premium real estate platform, providing our partners with the best in property services and development solutions.</p>
+                    <!-- <p>Pinnacle Home & Investment is a premium real estate platform, providing our partners with the best in property services and development solutions.</p> -->
+                    <p>Pinnacle Home & Investment Group Pty Ltd <br> ACN 697 393 016 of Level 10, 230 Collins Street,
+Melbourne VIC 3000</p>
                     <div class="footer-social">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -76,5 +78,6 @@ developers and licensed professionals. Referral rewards are transparent and disc
             });
         });
     </script>
+    @stack('scripts')
 </body>
 </html>

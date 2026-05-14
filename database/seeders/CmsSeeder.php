@@ -42,14 +42,14 @@ class CmsSeeder extends Seeder
         $about = Page::create([
             'title' => 'About Us',
             'slug' => 'about',
-            'meta_title' => 'About Melbourne Property Group',
-            'meta_description' => 'Learn more about Melbourne Property Group – a premium real estate network connecting buyers, developers and investors.',
+            'meta_title' => 'About Pinnacle Home and Investment',
+            'meta_description' => 'Learn more about Pinnacle Home and Investment – a premium real estate network connecting buyers, developers and investors.',
             'is_active' => true,
             'sort_order' => 1,
         ]);
         PageHero::create([
             'page_id' => $about->id,
-            'title' => 'About Melbourne Property Group',
+            'title' => 'About Pinnacle Home and Investment',
             'subtitle' => 'Australia\'s trusted premium property referral network.',
             'buttons' => [['text' => 'Contact Us', 'link' => '/contact']],
             'image' => 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80',
@@ -59,7 +59,7 @@ class CmsSeeder extends Seeder
             'page_id' => $about->id,
             'kicker_text' => 'WHO WE ARE',
             'title' => 'A New Standard in Property Services',
-            'lead_text' => 'Melbourne Property Group is built on integrity, expertise, and delivering exceptional outcomes.',
+            'lead_text' => 'Pinnacle Home and Investment is built on integrity, expertise, and delivering exceptional outcomes.',
             'content' => '<p>Founded with a vision to transform how Australians access premium real estate, MPG connects discerning buyers with certified developers and vetted build partners across Victoria and Queensland.</p><p>Our referral network spans residential, commercial, and off-plan developments, giving our clients access to opportunities typically reserved for the insider market.</p>',
             'layout' => 'large-image',
             'sort_order' => 1,
@@ -93,7 +93,7 @@ class CmsSeeder extends Seeder
         $services = Page::create([
             'title' => 'Our Services',
             'slug' => 'services',
-            'meta_title' => 'Property Services – Melbourne Property Group',
+            'meta_title' => 'Property Services – Pinnacle Home and Investment',
             'meta_description' => 'Explore the full range of property acquisition, investment strategy, and development management services.',
             'is_active' => true,
             'sort_order' => 2,
@@ -136,8 +136,8 @@ class CmsSeeder extends Seeder
         $contact = Page::create([
             'title' => 'Contact Us',
             'slug' => 'contact',
-            'meta_title' => 'Contact Melbourne Property Group',
-            'meta_description' => 'Get in touch with the Melbourne Property Group team. We are happy to answer your questions.',
+            'meta_title' => 'Contact Pinnacle Home and Investment',
+            'meta_description' => 'Get in touch with the Pinnacle Home and Investment team. We are happy to answer your questions.',
             'is_active' => true,
             'sort_order' => 3,
         ]);
