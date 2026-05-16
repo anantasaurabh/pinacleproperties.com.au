@@ -2,7 +2,6 @@
 @extends('layouts.app')
 
 @section('content')
-@include('includes.header')
 @include('sections.hero')
 @include('sections.featured_opportunities')
 @include('sections.about_pinnacle')
