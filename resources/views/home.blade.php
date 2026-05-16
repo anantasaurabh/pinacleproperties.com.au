@@ -9,10 +9,10 @@
 @include('sections.invest_victoria')
 @include('sections.core-pillars')
 {{-- @include('sections.about_us') --}}
-@include('sections.advisor_cta')
-@include('sections.how-it-works')
 
 @include('sections.inquiry-form')
+@include('sections.how-it-works')
+@include('sections.advisor_cta')
 @include('sections.refer-a-friend')
 @include('sections.solutions')
 @include('sections.blog')
