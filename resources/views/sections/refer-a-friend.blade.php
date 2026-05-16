@@ -5,6 +5,7 @@
                 <div class="section-title" style="text-align: left; margin-bottom: 30px;">
                     <span>Exclusive Rewards</span>
                     <h2>Refer a Friend to Pinnacle</h2>
+                    <p class="lead">Refer a friend and qualify for a <strong>$3,000 referral reward</strong> on eligible house and land package purchases.<sup>*</sup></p>
                 </div>
                 
                 <div class="refer-image">

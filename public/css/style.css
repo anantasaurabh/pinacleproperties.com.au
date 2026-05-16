@@ -341,7 +341,7 @@ nav ul li a:hover {
 }
 
 /*make every even section with light background*/
-.section:nth-child(even) {
+.section:nth-child(odd) {
     background-color: var(--light-bg);
 }
 
@@ -444,7 +444,7 @@ nav ul li a:hover {
 .stat-item strong {
     display: block;
     font-size: 1.5rem;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
 }
 
 .stat-item span {

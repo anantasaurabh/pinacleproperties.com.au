@@ -1,5 +1,6 @@
-@include('includes.header')
+@extends('layouts.app')
 
+@section('content')
 <main class="page-content">
     <section class="page-hero-premium" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ asset('assets/images/referral-hero.png') }}');">
         <div class="container">
@@ -171,87 +172,9 @@
         </div>
     </section>
 </main>
+@endsection
 
-
-@push('scripts')
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Referral page JS loaded');
-    
-    // FAQ Accordion
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            const item = question.parentElement;
-            console.log('FAQ clicked', item);
-            
-            // Close other items
-            document.querySelectorAll('.faq-item').forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                }
-            });
-            
-            item.classList.toggle('active');
-        });
-    });
-
-    // Form Submission
-    const referralForm = document.getElementById('referralForm');
-    const referralMessage = document.getElementById('referralMessage');
-    const referralSubmitBtn = document.getElementById('referralSubmitBtn');
-
-    if (referralForm) {
-        referralForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            referralSubmitBtn.disabled = true;
-            const originalText = referralSubmitBtn.innerText;
-            referralSubmitBtn.innerText = 'Submitting...';
-            
-            referralMessage.style.display = 'none';
-            referralMessage.className = 'form-message';
-
-            const formData = new FormData(referralForm);
-
-            fetch(referralForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    referralMessage.textContent = data.message;
-                    referralMessage.classList.add('success');
-                    referralMessage.style.color = '#457040';
-                    referralForm.reset();
-                } else {
-                    referralMessage.textContent = data.message || 'Error submitting referral.';
-                    referralMessage.classList.add('error');
-                    referralMessage.style.color = '#d9534f';
-                }
-            })
-            .catch(error => {
-                referralMessage.textContent = 'A network error occurred.';
-                referralMessage.classList.add('error');
-                referralMessage.style.color = '#d9534f';
-            })
-            .finally(() => {
-                referralSubmitBtn.disabled = false;
-                referralSubmitBtn.innerText = originalText;
-                referralMessage.style.display = 'block';
-            });
-        });
-    }
-});
-</script>
-@endpush
-
-@include('includes.footer')
-
+@push('styles')
 <style>
 .page-hero-premium {
     height: 450px;
@@ -500,4 +423,82 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }
 </style>
+@endpush
+
+@push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Referral page JS loaded');
+    
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            console.log('FAQ clicked', item);
+            
+            // Close other items
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            item.classList.toggle('active');
+        });
+    });
+
+    // Form Submission
+    const referralForm = document.getElementById('referralForm');
+    const referralMessage = document.getElementById('referralMessage');
+    const referralSubmitBtn = document.getElementById('referralSubmitBtn');
+
+    if (referralForm) {
+        referralForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            referralSubmitBtn.disabled = true;
+            const originalText = referralSubmitBtn.innerText;
+            referralSubmitBtn.innerText = 'Submitting...';
+            
+            referralMessage.style.display = 'none';
+            referralMessage.className = 'form-message';
+
+            const formData = new FormData(referralForm);
+
+            fetch(referralForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    referralMessage.textContent = data.message;
+                    referralMessage.classList.add('success');
+                    referralMessage.style.color = '#457040';
+                    referralForm.reset();
+                } else {
+                    referralMessage.textContent = data.message || 'Error submitting referral.';
+                    referralMessage.classList.add('error');
+                    referralMessage.style.color = '#d9534f';
+                }
+            })
+            .catch(error => {
+                referralMessage.textContent = 'A network error occurred.';
+                referralMessage.classList.add('error');
+                referralMessage.style.color = '#d9534f';
+            })
+            .finally(() => {
+                referralSubmitBtn.disabled = false;
+                referralSubmitBtn.innerText = originalText;
+                referralMessage.style.display = 'block';
+            });
+        });
+    }
+});
+</script>
+@endpush
 

@@ -23,11 +23,11 @@
             <div class="about-image">
                 <img src="{{ asset('assets/images/pinnacle_about.png') }}" alt="Pinnacle Home and Investments" style="width: 100%; border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
                 <div class="about-stats" style="bottom: 20px; right: 20px;">
-                    <div class="stat-item">
+                    <div class="stat-item text-white">
                         <strong>5%</strong>
                         <span>Minimum Deposit</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item text-white">
                         <strong>24m</strong>
                         <span>Flexible Settlement</span>
                     </div>

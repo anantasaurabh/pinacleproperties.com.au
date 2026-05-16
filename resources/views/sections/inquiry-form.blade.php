@@ -17,6 +17,24 @@
                     <h3>Secure Today</h3>
                     <p> <em>Prices are increasing rapidly in VIC and QLD. </em> </p> <p > Secure your package with just a <b>5%</b> deposit and lock in current market rates before the next increase.</p>
                 </div>
+                <div class="info-card urgency" style="margin-top: 20px;">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Why Choose Pinnacle?</h3>
+                    <ul style="list-style: none; padding: 0; margin: 15px 0 0 0;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fas fa-check" style="color: var(--primary-color); font-size: 0.9rem; margin-top: 4px;"></i>
+                            <span>Tailored property solutions for families & investors</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fas fa-check" style="color: var(--primary-color); font-size: 0.9rem; margin-top: 4px;"></i>
+                            <span>Access to exclusive house & land packages</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fas fa-check" style="color: var(--primary-color); font-size: 0.9rem; margin-top: 4px;"></i>
+                            <span>Strategic advice for long-term wealth building</span>
+                        </li>
+                    </ul>
+                </div>
                 
             </div>
 
@@ -47,70 +65,113 @@
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="estate">Estate (Optional)</label>
-                            <input type="text" id="estate" name="estate" placeholder="Name of estate (if any)">
+                            <label for="budget">House and Land Package Budget</label>
+                            <select id="budget" name="budget" required onchange="checkOtherBudget(this)">
+                                <option value="" disabled selected>Select Budget</option>
+                                <option value="$600,000">$600,000</option>
+                                <option value="$625,000">$625,000</option>
+                                <option value="$675,000">$675,000</option>
+                                <option value="$700,000">$700,000</option>
+                                <option value="$725,000">$725,000</option>
+                                <option value="$750,000">$750,000</option>
+                                <option value="$775,000">$775,000</option>
+                                <option value="$800,000">$800,000</option>
+                                <option value="$825,000">$825,000</option>
+                                <option value="$850,000">$850,000</option>
+                                <option value="$875,000">$875,000</option>
+                                <option value="$900,000">$900,000</option>
+                                <option value="Other">Other amount</option>
+                            </select>
+                            <input type="text" id="other_budget" name="other_budget" placeholder="Specify other amount" style="display:none; margin-top: 10px;">
                         </div>
                         <div class="form-group">
-                            <label for="city">Which city are you looking to buy in?</label>
-                            <select id="city" name="city" required>
-                                <option value="" disabled selected>Select City</option>
-                                <option value="VIC">VIC</option>
-                                <option value="QLD">QLD</option>
+                            <label for="distance">Preferred Distance from CBD</label>
+                            <select id="distance" name="distance" required>
+                                <option value="" disabled selected>Select Distance</option>
+                                <option value="25 km">25 km</option>
+                                <option value="30 km">30 km</option>
+                                <option value="35 km">35 km</option>
+                                <option value="40 km">40 km</option>
+                                <option value="45 km">45 km</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="timeline">When are you planning to move in?</label>
-                            <select id="timeline" name="timeline" required>
-                                <option value="" disabled selected>Select Timeline</option>
-                                <option value="6 months">6 Months</option>
-                                <option value="9 months">9 Months</option>
-                                <option value="12 months">12 Months</option>
-                                <option value="18 months">18 Months</option>
+                            <label for="interest">What are you interested in?</label>
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected>Select Interest</option>
+                                <option value="Buying for my own living">Buying for my own living</option>
+                                <option value="Investment property">Investment property</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="location">Preferred Location</label>
+                            <select id="location" name="location" required>
+                                <option value="" disabled selected>Select Location</option>
+                                <option value="VIC">Victoria (VIC)</option>
+                                <option value="QLD">Queensland (QLD)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="purpose">Property Purpose</label>
+                            <select id="purpose" name="purpose" required>
+                                <option value="" disabled selected>Select Purpose</option>
+                                <option value="Primary home">Primary home</option>
+                                <option value="Investment property">Investment property</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="plans">Future Plans</label>
+                            <select id="plans" name="plans" required>
+                                <option value="" disabled selected>Select Plans</option>
+                                <option value="Looking to move in">Looking to move in</option>
+                                <option value="Looking to lease to tenants">Looking to lease to tenants</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rental_guarantee">Rental Guarantee</label>
+                            <select id="rental_guarantee" name="rental_guarantee" required>
+                                <option value="" disabled selected>Select Option</option>
+                                <option value="Yes">Yes, looking for at least 2 years</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="build_preference">Build Preference</label>
+                            <select id="build_preference" name="build_preference" required>
+                                <option value="" disabled selected>Select Preference</option>
+                                <option value="Standard">Standard package</option>
+                                <option value="Customised">Customised package</option>
+                            </select>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">*Customised packages may include upgraded features, selected materials, and design changes, which may incur additional costs.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="source">How did you hear about us?</label>
-                            <select id="source" name="source" required>
+                            <select id="source" name="source" required onchange="checkOtherSource(this)">
                                 <option value="" disabled selected>Select Option</option>
-                                <option value="Social Media">Social Media</option>
-                                <option value="Google Search">Google Search</option>
-                                <option value="Friend/Family">Friend/Family</option>
-                                <option value="Billboard">Billboard</option>
-                                <option value="Other">Other</option>
+                                <option value="Friends and family">Friends and family</option>
+                                <option value="Website">Website</option>
+                                <option value="Referral partner">Referral partner</option>
+                                <option value="Other">Other (please specify)</option>
                             </select>
+                            <input type="text" id="other_source" name="other_source" placeholder="Please specify" style="display:none; margin-top: 10px;">
                         </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Do you have finance ready?</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="finance" value="Ready" required> Yes, <br>finance is ready
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="finance" value="Need Help"> No, <br>I need help
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Build Type</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="build_type" value="Standard" checked> Standard Build
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="build_type" value="Customize"> Customize Build
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-footer">
-                        <button type="submit" class="btn-primary" id="submitBtn">
+                    <div class="form-footer" style="text-align: center; margin-top: 30px;">
+                        <p style="font-weight: 600; color: var(--primary-color); margin-bottom: 20px;">Secure your future dream property and start building wealth while saving money.</p>
+                        <button type="submit" class="btn-primary" id="submitBtn" style="width: 100%; max-width: 400px; padding: 18px;">
                             Submit Inquiry
                         </button>
                     </div>
@@ -131,6 +192,28 @@
 </section>
 @push('scripts')
 <script>
+function checkOtherSource(select) {
+        const otherInput = document.getElementById('other_source');
+        if (select.value === 'Other') {
+            otherInput.style.display = 'block';
+            otherInput.required = true;
+        } else {
+            otherInput.style.display = 'none';
+            otherInput.required = false;
+        }
+    }
+
+    function checkOtherBudget(select) {
+        const otherInput = document.getElementById('other_budget');
+        if (select.value === 'Other') {
+            otherInput.style.display = 'block';
+            otherInput.required = true;
+        } else {
+            otherInput.style.display = 'none';
+            otherInput.required = false;
+        }
+    }
+
 document.addEventListener('DOMContentLoaded', function() {
     const inquiryForm = document.getElementById('inquiryForm');
     const formMessage = document.getElementById('formMessage');

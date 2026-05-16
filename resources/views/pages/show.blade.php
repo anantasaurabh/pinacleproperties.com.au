@@ -1,5 +1,6 @@
-@include('includes.header')
+@extends('layouts.app')
 
+@section('content')
 {{-- HERO SECTION --}}
 @if($page->hero && $page->hero->is_active)
     <section class="hero-section page-hero" @if($page->hero->image) style="background-image: url('{{ Str::startsWith($page->hero->image, 'http') ? $page->hero->image : asset('storage/' . $page->hero->image) }}')" @endif>
@@ -61,7 +62,7 @@
                                 <div class="block-img">
                                     <img src="{{ Str::startsWith($block->image, 'http') ? $block->image : asset('storage/' . $block->image) }}" alt="{{ $block->title ?? '' }}">
                                 </div>
-                            @endif
+                             @endif
                             @if($block->icon)
                                 <div class="block-icon"><i class="{{ $block->icon }}"></i></div>
                             @endif
@@ -116,5 +117,4 @@
         </div>
     </section>
 @endif
-
-@include('includes.footer')
+@endsection
