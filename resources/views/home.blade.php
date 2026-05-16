@@ -2,6 +2,8 @@
 @include('includes.header')
 @include('sections.hero')
 @include('sections.featured_opportunities')
+@include('sections.about_pinnacle')
+@include('sections.invest_victoria')
 @include('sections.core-pillars')
 {{-- @include('sections.about_us') --}}
 @include('sections.solutions')

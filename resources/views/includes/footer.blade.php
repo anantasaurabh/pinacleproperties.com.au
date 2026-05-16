@@ -57,6 +57,15 @@ developers and licensed professionals. Referral rewards are transparent and disc
             </div>
         </div>
     </footer>
+    <div class="acknowledgement-section">
+        <div class="container">
+            <div class="acknowledgement-content" tyle="font-size: 10px;">
+                <h4>Acknowledgement of Country</h4>
+                <p>Pinnacle Home and Investment Group acknowledges the Traditional Custodians of the lands across Australia on which we live and work.</p>
+                <p>We acknowledge their connection to this Country and pay our respect to Elders past and present.</p>
+            </div>
+        </div>
+    </div>
     <script>
         const mobileMenu = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('nav');
