@@ -15,5 +15,4 @@
 @include('sections.refer-a-friend')
 @include('sections.solutions')
 @include('sections.blog')
-@include('sections.cta')
 @endsection

@@ -16,17 +16,17 @@ class CmsSeeder extends Seeder
     {
         // ── NAVIGATION ────────────────────────────────────────────
         $headerNav = [
-            ['label' => 'Home',        'link' => '/',           'location' => 'header', 'sort_order' => 1],
-            ['label' => 'Properties',  'link' => '/properties', 'location' => 'header', 'sort_order' => 2],
-            ['label' => 'Services',    'link' => '/services',   'location' => 'header', 'sort_order' => 3],
-            ['label' => 'About',       'link' => '/about',      'location' => 'header', 'sort_order' => 4],
-            ['label' => 'Contact',     'link' => '/contact',    'location' => 'header', 'sort_order' => 5],
+            ['label' => 'Home',                  'link' => '/',                           'location' => 'header', 'sort_order' => 1],
+            ['label' => 'House & Land Packages', 'link' => '/house-and-land-packages',    'location' => 'header', 'sort_order' => 2],
+            ['label' => 'Services',              'link' => '/services',                   'location' => 'header', 'sort_order' => 3],
+            ['label' => 'About',                 'link' => '/about',                      'location' => 'header', 'sort_order' => 4],
+            ['label' => 'Contact',               'link' => '/contact',                    'location' => 'header', 'sort_order' => 5],
         ];
         $footerQuick = [
-            ['label' => 'About MPG',          'link' => '/about',            'location' => 'footer_quick_links', 'sort_order' => 1],
-            ['label' => 'Properties',         'link' => '/properties',       'location' => 'footer_quick_links', 'sort_order' => 2],
-            ['label' => 'Join our Network',   'link' => '/contact',          'location' => 'footer_quick_links', 'sort_order' => 3],
-            ['label' => 'Services',           'link' => '/services',         'location' => 'footer_quick_links', 'sort_order' => 4],
+            ['label' => 'About MPG',             'link' => '/about',                      'location' => 'footer_quick_links', 'sort_order' => 1],
+            ['label' => 'House & Land Packages', 'link' => '/house-and-land-packages',    'location' => 'footer_quick_links', 'sort_order' => 2],
+            ['label' => 'Join our Network',      'link' => '/contact',                    'location' => 'footer_quick_links', 'sort_order' => 3],
+            ['label' => 'Services',              'link' => '/services',                   'location' => 'footer_quick_links', 'sort_order' => 4],
         ];
         $footerCompany = [
             ['label' => 'Our Story',       'link' => '/about',   'location' => 'footer_company', 'sort_order' => 1],
@@ -128,7 +128,7 @@ class CmsSeeder extends Seeder
             'page_id' => $services->id,
             'title' => 'Ready to find your next property?',
             'subtitle' => 'Let our experts guide you to the right investment.',
-            'buttons' => [['text' => 'Contact Us', 'link' => '/contact'], ['text' => 'View Properties', 'link' => '/properties']],
+            'buttons' => [['text' => 'Contact Us', 'link' => '/contact'], ['text' => 'View Packages', 'link' => '/house-and-land-packages']],
             'is_active' => true,
         ]);
 

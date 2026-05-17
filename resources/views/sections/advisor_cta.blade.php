@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="advisor-action-btn">
-                <a href="#inquiry" class="btn-primary">Schedule a Call</a>
+                <a href="https://calendly.com/{{ env('CALENDLY_USERNAME', 'pinnacle-group') }}" target="_blank" class="btn-primary">Schedule a Call</a>
             </div>
         </div>
     </div>

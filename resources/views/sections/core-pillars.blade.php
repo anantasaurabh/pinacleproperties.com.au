@@ -18,7 +18,7 @@
                     'Nationwide property options',
                 ],
                 'image' => asset('assets/images/mpg-home-buyers.png'),
-                'link' => '#',
+                'link' => url('/home-buyers'),
                 'link_label' => 'Find My Home'
             ],
             [
@@ -32,7 +32,7 @@
                     'Expert guidance from accountants and brokers',
                 ],
                 'image' => 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-                'link' => '#',
+                'link' => url('/investors'),
                 'link_label' => 'Explore Investments'
             ],
             [
@@ -46,7 +46,7 @@
                     'Simple onboarding; low barrier to entry',
                 ],
                 'image' => asset('assets/images/mpg-partners.png'),
-                'link' => '#',
+                'link' => url('/partners'),
                 'link_label' => 'Join as a Partner'
             ],
             [
@@ -60,7 +60,7 @@
                     'Enhanced project visibility',
                 ],
                 'image' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
-                'link' => '#',
+                'link' => url('/developers'),
                 'link_label' => 'Apply to Partner as a Developer'
             ]
         ];

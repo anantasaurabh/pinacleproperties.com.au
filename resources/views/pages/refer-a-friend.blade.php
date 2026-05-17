@@ -42,77 +42,7 @@
                     <div class="form-header">
                         <h3>Submit Referral</h3>
                     </div>
-                    <form id="referralForm" action="{{ route('refer.submit') }}" method="POST">
-                        @csrf
-                        <div class="form-section">
-                            <span class="section-label">Your Details (Referrer)</span>
-                            <div class="form-group">
-                                <label class="field-label">Full Name</label>
-                                <input type="text" name="referrer_name" placeholder="John Doe" required>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="field-label">Phone Number</label>
-                                    <input type="text" name="referrer_phone" placeholder="0400 000 000" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="field-label">Email Address</label>
-                                    <input type="email" name="referrer_email" placeholder="john@example.com" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="field-label">Build Street Address</label>
-                                <input type="text" name="referrer_street" placeholder="123 Example St" required>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="field-label">Suburb</label>
-                                    <input type="text" name="referrer_suburb" placeholder="Melbourne" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="field-label">State</label>
-                                    <select name="referrer_state" required>
-                                        <option value="Victoria">Victoria</option>
-                                        <option value="Queensland">Queensland</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="field-label">Postcode</label>
-                                    <input type="text" name="referrer_postcode" placeholder="3000" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <span class="section-label">Friend / Family Details</span>
-                            <div class="form-group">
-                                <label class="field-label">Full Name</label>
-                                <input type="text" name="friend_name" placeholder="Jane Smith" required>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="field-label">Phone Number</label>
-                                    <input type="text" name="friend_phone" placeholder="0400 000 000" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="field-label">Email Address</label>
-                                    <input type="email" name="friend_email" placeholder="jane@example.com" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="agree_terms" required>
-                            <label for="agree_terms">
-                                I agree to Pinnacle Home and Investment's 
-                                <a href="/privacy-policy" target="_blank">privacy policy</a> and 
-                                <a href="/terms-of-service" target="_blank">terms</a>
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn-primary" style="width: 100%;" id="referralSubmitBtn">Submit Referral</button>
-                        <div id="referralMessage" class="form-message" style="margin-top: 15px;"></div>
-                    </form>
+                    @include('forms.referral')
                 </div>
             </div>
         </div>
@@ -435,7 +365,6 @@ document.addEventListener('DOMContentLoaded', function() {
     faqQuestions.forEach(question => {
         question.addEventListener('click', () => {
             const item = question.parentElement;
-            console.log('FAQ clicked', item);
             
             // Close other items
             document.querySelectorAll('.faq-item').forEach(otherItem => {
@@ -447,57 +376,6 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.toggle('active');
         });
     });
-
-    // Form Submission
-    const referralForm = document.getElementById('referralForm');
-    const referralMessage = document.getElementById('referralMessage');
-    const referralSubmitBtn = document.getElementById('referralSubmitBtn');
-
-    if (referralForm) {
-        referralForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            referralSubmitBtn.disabled = true;
-            const originalText = referralSubmitBtn.innerText;
-            referralSubmitBtn.innerText = 'Submitting...';
-            
-            referralMessage.style.display = 'none';
-            referralMessage.className = 'form-message';
-
-            const formData = new FormData(referralForm);
-
-            fetch(referralForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    referralMessage.textContent = data.message;
-                    referralMessage.classList.add('success');
-                    referralMessage.style.color = '#457040';
-                    referralForm.reset();
-                } else {
-                    referralMessage.textContent = data.message || 'Error submitting referral.';
-                    referralMessage.classList.add('error');
-                    referralMessage.style.color = '#d9534f';
-                }
-            })
-            .catch(error => {
-                referralMessage.textContent = 'A network error occurred.';
-                referralMessage.classList.add('error');
-                referralMessage.style.color = '#d9534f';
-            })
-            .finally(() => {
-                referralSubmitBtn.disabled = false;
-                referralSubmitBtn.innerText = originalText;
-                referralMessage.style.display = 'block';
-            });
-        });
-    }
 });
 </script>
 @endpush

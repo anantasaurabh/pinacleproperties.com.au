@@ -13,7 +13,19 @@ class EditPage extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            Actions\DeleteAction::make(),
+            Actions\Action::make('save')
+                ->label('Save changes')
+                ->color('primary')
+                ->action('save'),
+            Actions\Action::make('cancel')
+                ->label('Cancel')
+                ->color('secondary')
+                ->url($this->getResource()::getUrl('index')),
         ];
+    }
+
+    protected function getFormActions(): array
+    {
+        return [];
     }
 }

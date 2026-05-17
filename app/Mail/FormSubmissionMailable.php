@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Mail;
+
+use App\Models\FormSubmission;
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+
+class FormSubmissionMailable extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public function __construct(public FormSubmission $submission)
+    {}
+
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: 'New Form Submission: ' . ucfirst($this->submission->form_name),
+        );
+    }
+
+    public function content(): Content
+    {
+        return new Content(
+            view: 'emails.form-submission',
+        );
+    }
+}
