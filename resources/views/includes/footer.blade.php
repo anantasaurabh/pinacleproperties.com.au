@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-about">
-                <img src="{{ asset('assets/images/pinnacle-logo.png') }}" alt="Logo" style="max-height:100px">
+                <img src="{{ asset('assets/images/pinnacle-property-group-logo.png') }}" alt="Logo" style="max-height:100px">
                 <p>Pinnacle Home & Investment Group Pty Ltd <br> ACN 697 393 016 of Level 10, 230 Collins Street, Melbourne VIC 3000</p>
                 <div class="footer-social">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
