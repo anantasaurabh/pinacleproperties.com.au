@@ -8,8 +8,8 @@
         <div class="hero-content">
             <div class="hero-content-main">
                 <h1>Connecting Buyers, Investors, Professionals & Developers <span>Nationwide.</span></h1>
-                <p>We make property connections simple, transparent, and trusted through our premium real estate ecosystems.</p>
-            <div class="hero-btns">
+                <p>Helping Australians Secure Their Dream Home and Build Wealth Through Trusted Property Opportunities.</p>
+            <!-- <div class="hero-btns">
             <a href="{{ url('/home-buyers') }}" class="btn-hero">
                 <i class="fa-solid fa-house"></i>
                 Home Buyers
@@ -26,7 +26,22 @@
                 <i class="fa-solid fa-city"></i>
                 Developers
             </a>
-        </div>
+        </div> -->
+            <div class="hero-btns">
+                 <a href="{{ route('properties.index') }}" class="btn-hero">
+                    <i class="fas fa-home"></i> Find Your Ideal Package
+                </a>
+               
+                <a href="{{ url('/contact') }}" class="btn-hero">
+                    <i class="fas fa-user-tie"></i> Speak to a Property Advisor
+                </a>
+                <a href="{{ url('/investors') }}" class="btn-hero">
+                    <i class="fas fa-chart-line"></i> Start Your Investment Journey
+                </a>
+                <a href="https://calendly.com/brandodigital-support/30min" target="_blank" rel="noopener noreferrer" class="btn-hero">
+                    <i class="fas fa-calendar-check"></i> Book a Free Consultation
+                </a>
+            </div>
             </div>
             
         </div>

@@ -310,6 +310,57 @@ nav ul li a:hover {
 
 }
 
+.hero-cta-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn-hero-primary {
+    background: var(--secondary-color);
+    color: var(--white) !important;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(var(--secondary-color-rgb), 0.3);
+}
+
+.btn-hero-primary:hover {
+    background: var(--secondary-color-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(var(--secondary-color-rgb), 0.5);
+}
+
+.btn-hero-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white) !important;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.btn-hero-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
 .btn-blue {
     background: #3b82f6 !important;
     color: #fff !important;
@@ -558,6 +609,18 @@ nav ul li a:hover {
 
     #how-it-works .step-card {
         padding: 40px 20px;
+    }
+
+    .hero-cta-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-hero-primary, .btn-hero-secondary {
+        width: 100%;
+        max-width: 350px;
+        justify-content: center;
     }
 }
 

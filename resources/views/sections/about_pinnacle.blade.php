@@ -7,7 +7,7 @@
                     <h2 style="font-size: 2.8rem; line-height: 1.2;">About Pinnacle Home and Investments</h2>
                 </div>
                 <p class="lead" style="font-size: 1.15rem; color: var(--text-color); margin-bottom: 30px;">
-                    We work closely with some of the best developers and builders across Victoria and Queensland, assisting our community in achieving their dream of owning a brand-new house and land package or securing land for future development, subject to building conditions and package requirements.
+                   Pinnacle Home & Investment delivers a premium real estate ecosystem designed to connect buyers, investors, developers, and industry professionals nationwide. Through strategic partnerships, market expertise, and a transparent referral approach, we help clients secure high-quality property opportunities while creating long-term value and sustainable growth.
                 </p>
                 
                 <div class="purpose-box" style="background: rgba(var(--primary-color-rgb), 0.05); padding: 40px; border-radius: 20px; border-left: 5px solid var(--primary-color);">
