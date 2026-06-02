@@ -2,7 +2,7 @@
     <div class="container">
         <div class="logo">
             <a href="/">
-                <img src="{{ asset('assets/images/pinnacle-property-group-logo.png') }}" alt="Logo">
+                <img src="{{ asset('assets/images/pinnacle-property-groups.png') }}" alt="Logo">
             </a>
         </div>
         <nav>
